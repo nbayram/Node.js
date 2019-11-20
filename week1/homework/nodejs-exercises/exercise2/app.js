@@ -1,6 +1,7 @@
 'use strict';
 
-const padStart = require('String.prototype.padStart');
+const padLeft = require('left-pad');
 
-assert(padStart())
+const numbers = ["12", "846", "2", "1236"];
 
+numbers.forEach(number => console.log(padLeft(number, 8, " ")));
