@@ -8,6 +8,6 @@ const numbers = ["12", "846", "2", "1236"];
 
 // use the exports keyword in andrejs-awesome-function.js
 module.exports = {
-  padLeft: padLeft,
-  numbers: numbers
+  padLeft,
+  numbers
 }
