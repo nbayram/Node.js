@@ -1,0 +1,9 @@
+{{!-- The content of the index.handlebars should be a <form>. Making templates to create a frontend that will be a simple page with a form --}}
+
+{{!-- The form should be submitted to our POST request endpoint, which is /weather. Let the form know about this endpoint by passing it as a value to the action property: action="/weather" --}}
+<form action="/weather" method="POST">
+  {{!-- Make sure it has an <input> field, which should be of type="text" and have a name="cityName". Key is name of the input --}}
+  <input type="text" name="cityName">
+  {{!-- Also add a submit button. Submit send request to the action of the form that it include with method! --}}
+  <input type="submit" value="gonder">
+</form>
