@@ -8,7 +8,10 @@ const fetch = require('node-fetch');
 fetch('https://restapiabasicauthe-sandbox.mxapps.io/api/books', {
   // Visit https://www.base64encode.org/ to convert admin:hvgX8KlVEa to base64
   // Set the authorization header in the GET request - fetch(<URL>,{ headers: { 'Authorization': 'Basic XXXXXX' } }
-  headers: { 'Authorization': 'Basic YWRtaW46aHZnWDhLbFZFYQ==' }
+  // First way:
+  // headers: { 'Authorization': 'Basic YWRtaW46aHZnWDhLbFZFYQ==' }
+  // Second way: Bonus
+  headers: { 'Authorization': `Basic ${Buffer.from('admin:hvgX8KlVEa').toString('base64')}` }
 })
   .then(data => data.json())
   .then(console.log) // Print the response
