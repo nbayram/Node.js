@@ -1,5 +1,3 @@
-// Go back to your project folder and create a new folder called sources. Inside create a file called keys.json. Go to your OpenWeatherMap account, find the API Key and copy it into keys.json
-
 {
   "apiKey": "83cdd714c93b42c2a37c78cf2ed7e4d3"
 }
